@@ -17,14 +17,14 @@ public class Student {
     private String lastName;
     private double cgpa;
     @Column(nullable = false)
-    private LocalDate enrollmentDate;
+    private String enrollmentDate;
     @Column(nullable = false)
     private String isInternational;
 
     public Student() {
     }
 
-    public Student(String studentNumber, String firstNname, String middleName, String lastName, double cgpa, LocalDate enrollmentDate, String isInternational) {
+    public Student(String studentNumber, String firstNname, String middleName, String lastName, double cgpa, String enrollmentDate, String isInternational) {
         this.studentNumber = studentNumber;
         this.firstNname = firstNname;
         this.middleName = middleName;
@@ -82,11 +82,11 @@ public class Student {
         this.cgpa = cgpa;
     }
 
-    public LocalDate getEnrollmentDate() {
+    public String getEnrollmentDate() {
         return enrollmentDate;
     }
 
-    public void setEnrollmentDate(LocalDate enrollmentDate) {
+    public void setEnrollmentDate(String enrollmentDate) {
         this.enrollmentDate = enrollmentDate;
     }
 
